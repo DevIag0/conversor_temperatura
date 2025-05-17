@@ -45,8 +45,7 @@ Este conversor de temperatura permite aos usuários:
 
 ## 📱 Capturas de Tela
 
-![Conversor Modo Celsius para Fahrenheit](screenshots/cel-to-fah.png)
-![Conversor Modo Fahrenheit para Celsius](screenshots/fah-to-cel.png)
+![Conversor Modo Celsius para Fahrenheit](assets/projeto.jpg)
 
 ## 🧩 Estrutura do Projeto
 
