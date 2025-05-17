@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Temperatura</title>
+    <!-- Link para o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Container principal da aplicação -->
+    <div class="container">
+        <!-- Título da aplicação -->
+        <h1>Conversor de Temperatura</h1>
+        
+        <!-- Área do conversor com entrada, botão e saída -->
+        <div class="converter-box">
+            <!-- Seletor para o tipo de conversão -->
+            <div class="conversion-toggle">
+                <button class="toggle-btn active" id="cel-to-fah">Celsius → Fahrenheit</button>
+                <button class="toggle-btn" id="fah-to-cel">Fahrenheit → Celsius</button>
+            </div>
+            
+            <!-- Conversão de Celsius para Fahrenheit -->
+            <div class="conversion-section" id="cel-to-fah-section">
+                <!-- Grupo de entrada para temperatura em Celsius -->
+                <div class="input-group">
+                    <label for="celsius">Celsius (°C):</label>
+                    <input type="number" id="celsius" placeholder="Digite a temperatura em Celsius">
+                </div>
+                
+                <!-- Botão para acionar a conversão -->
+                <button id="convert-to-fah-btn" class="convert-btn">Converter para Fahrenheit</button>
+                
+                <!-- Grupo de saída para temperatura em Fahrenheit -->
+                <div class="result-group">
+                    <label for="fahrenheit">Fahrenheit (°F):</label>
+                    <input type="text" id="fahrenheit" readonly>
+                </div>
+            </div>
+            
+            <!-- Conversão de Fahrenheit para Celsius -->
+            <div class="conversion-section hidden" id="fah-to-cel-section">
+                <!-- Grupo de entrada para temperatura em Fahrenheit -->
+                <div class="input-group">
+                    <label for="fahrenheit-input">Fahrenheit (°F):</label>
+                    <input type="number" id="fahrenheit-input" placeholder="Digite a temperatura em Fahrenheit">
+                </div>
+                
+                <!-- Botão para acionar a conversão -->
+                <button id="convert-to-cel-btn" class="convert-btn">Converter para Celsius</button>
+                
+                <!-- Grupo de saída para temperatura em Celsius -->
+                <div class="result-group">
+                    <label for="celsius-output">Celsius (°C):</label>
+                    <input type="text" id="celsius-output" readonly>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Área de informações sobre as fórmulas de conversão -->
+        <div class="info">
+            <p id="formula-cel-to-fah">Fórmula: (°C × 9/5) + 32 = °F</p>
+            <p id="formula-fah-to-cel" class="hidden">Fórmula: (°F - 32) × 5/9 = °C</p>
+        </div>
+    </div>
+    
+    <!-- Link para o arquivo JavaScript que contém a lógica de conversão -->
+    <script src="script.js"></script>
+</body>
+</html>
