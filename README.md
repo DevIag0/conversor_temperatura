@@ -62,8 +62,6 @@ conversor_temperatura/
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests para melhorar este conversor.
 
-## 📄 Licença
-Este projeto é de código aberto e está licenciado sob a [MIT License](LICENSE).
 
 ## 👨‍💻 Autor
 
